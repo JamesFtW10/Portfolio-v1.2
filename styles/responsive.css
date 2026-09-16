@@ -82,6 +82,24 @@
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0px;
+  justify-items: center;   /* dagdag ito */
+
+  .tech-card {
+    min-height: 100px;
+    padding: 10px 8px 10px;
+    border: none;
+    max-width: 100px;
+
+    span {
+      font-size: 8px;
+    }
+  }
+}
 }
 
 
@@ -234,12 +252,6 @@
     font-size: 13px;
   }
 
-  /* NOTE: dati dito, .about-content/.contact-wrapper/.about-stats-grid/
-     .tech-grid/.frontend-grid ay nag-uulit (nilagay nang dalawang beses
-     sa parehong block, magkaiba lang ang value sa 2nd copy). Ito ang
-     FINAL/effective values na natitira (yung pinaka-huli sa CSS
-     cascade ang laging nananalo kapag magkapareho ang specificity) -
-     kaya inayos na dito, iisa na lang bawat rule: */
   .about-content,
   .contact-wrapper {
     grid-template-columns: 1fr;
@@ -253,9 +265,23 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .tools-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0px;
+  justify-items: center;   /* dagdag ito */
+
+  .tech-card {
+    min-height: 100px;
+    padding: 10px 8px 10px;
+    border: none;
+    max-width: 100px;
+
+    span {
+      font-size: 8px;
+    }
   }
+}
 
   .frontend-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
