@@ -3,33 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JamesB | Portfolio </title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="General-images/LogoIcon.png">
+    <title>James B. | Aspiring Fullstack Developer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="icon" href="General-images/LogoIcon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <nav>
+      <div class="navbar" id="navbar">
         <div class="left-div-nav">
-          <img src="General-images/LogoIcon.png" alt="" />
-          <h1><span>BARRERA</span> <br />JAMES V.</h1>
+          <a href="#home" class="logo-link">
+            <img src="General-images/LogoIcon.png" alt="James Barrera Logo" />
+            <h1><span>BARRERA</span> <br />JAMES V.</h1>
+          </a>
         </div>
-        <div class="center-div-nav">
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" hidden />
+        <label for="nav-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <div class="center-div-nav" id="nav-links">
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">SKILL</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTRACT</a></li>
+            <li><a href="#home" class="nav-link ">HOME</a></li>
+            <li><a href="#about" class="nav-link">ABOUT</a></li>
+            <li><a href="#skills" class="nav-link">TECH STACK</a></li>
+            <li><a href="#services" class="nav-link">SERVICES</a></li>
+            <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
           </ul>
         </div>
         <div class="right-div-nav">
-          <button>MESSAGE ME</button>
+          <a href="#contact" class="btn-message">MESSAGE ME</a>
         </div>
-      </nav>
+      </div>
 
-      <section class="home-container">
+      <section class="home-container" id="home">
         <div class="glow glow-left"></div>
         <div class="glow glow-right"></div>
 
@@ -42,6 +56,7 @@
               </h1>
               <h2 class="highlight">ASPIRING FULLSTACK DEVELOPER</h2>
             </div>
+            
             <div class="profile-picture-div">
               <img
                 class="profile-picture"
@@ -83,31 +98,31 @@
           </div>
 
           <div class="socials">
-            <a href="#" aria-label=""
+            <a href="https://wa.me/09553743900" aria-label="WhatsApp"
               ><img
                 class="sidebar-contact whatsup"
                 src="sidebar-images/what'sup.png"
                 alt="error"
             /></a>
-            <a href="#" aria-label=""
+            <a href="https://www.facebook.com/james.barrera.609396" aria-label=""
               ><img
                 class="sidebar-contact facebook"
                 src="sidebar-images/facebook.png"
                 alt="error"
             /></a>
-            <a href="#" aria-label=""
+            <a href="https://github.com/JamesFtW10" aria-label=""
               ><img
                 class="sidebar-contact github"
                 src="sidebar-images/github.png"
                 alt="error"
             /></a>
-            <a href="#" aria-label=""
+            <a href="https://t.me/jamesbarrera0907" aria-label=""
               ><img
                 class="sidebar-contact telegram"
                 src="sidebar-images/telegram.png"
                 alt="error"
             /></a>
-            <a href="#" aria-label=""
+            <a href="https://www.linkedin.com/in/james-barrera-1628532b0/" aria-label=""
               ><img
                 class="sidebar-contact linkend"
                 src="sidebar-images/linkendIn.png"
@@ -116,6 +131,587 @@
           </div>
         </div>
       </section>
+      <!-- About Section -->
+
+      <section class="section-container about" id="about">
+        <div class="section-header">
+          <span class="section-subtitle">GET TO KNOW ME</span>
+          <h2 class="section-title">About <span id="highlight">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-card main-bio">
+            <h3>Hello, I'm <span class="text-accent">James V. Barrera</span></h3>
+            <p class="bio-lead">
+              An ambitious <strong>Aspiring Fullstack Developer</strong> dedicated to building modern web applications, performant APIs, and scalable databases.
+            </p>
+            <p>
+              I bridge the gap between intuitive user interfaces and robust backend logic. I build frontend experiences with <strong>React</strong>, <strong>JavaScript</strong>, <strong>HTML5</strong>, and <strong>CSS3</strong>, and develop powerful backends using <strong>HonoJS</strong>, and <strong>Node.js</strong>.
+            </p>
+            <p>
+              With <strong>Prisma ORM</strong> and <strong>MySQL</strong> handling datastores, and modern workflows using <strong>Git</strong>, <strong>Figma</strong>, <strong>Vercel</strong>, <strong>Render</strong>, and <strong>AI</strong>, I deliver end-to-end fullstack software.
+            </p>
+
+            <div class="about-badges">
+              <span class="badge"><i class="dot"></i> Fullstack Development</span>
+              <span class="badge"><i class="dot"></i> API Design</span>
+              <span class="badge"><i class="dot"></i> Clean UI/UX w AI</span>
+            </div>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <a href="#portfolio" class="stat-link">
+                
+              <div class="stat-label">View projects</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20V4m-7 9l7 7l7-7" />
+            </svg>
+
+              </a>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Core Tech & Tools</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">Fullstack</div>
+              <div class="stat-label">End-to-End Solutions</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tech Stack / Skills Section -->
+
+      <section class="section-container skills" id="skills">
+        <div class="tech-header">
+          <span class="tech-eyebrow">MY TECH ECOSYSTEM</span>
+          <h2 class="tech-title">Tech <span id="highlight">Stack &amp; Tools</span></h2>
+          <p>Technologies and tools I use to build modern fullstack applications.</p>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <div class="category-title">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </div>
+              <h3>Frontend</h3>
+            </div>
+            <span class="category-tag">UI / UX</span>
+          </div>
+
+          <div class="tech-grid frontend-grid">
+            <div class="tech-card">
+              <div class="tech-icon-wrapper react-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-react">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
+                  <path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
+                  <path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
+                  <path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
+                  <path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
+                  <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
+                  <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732" />
+                </svg>
+              </div>
+              <h4>React</h4>
+              <span class="tech-badge">Frontend</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper js-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0" />
+                  <path d="M7.5 8h3v8l-2 -1" />
+                  <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+              </div>
+              <h4>JavaScript</h4>
+              <span class="tech-badge">Language</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper html-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-html">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                  <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+                  <path d="M2 21v-6" />
+                  <path d="M5 15v6" />
+                  <path d="M2 18h3" />
+                  <path d="M20 15v6h2" />
+                  <path d="M13 21v-6l2 3l2 -3v6" />
+                  <path d="M7.5 15h3" />
+                  <path d="M9 15v6" />
+                </svg>
+              </div>
+              <h4>HTML5</h4>
+              <span class="tech-badge">Markup</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper css-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0" />
+                  <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+              </div>
+              <h4>CSS3</h4>
+              <span class="tech-badge">Styling</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper css-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+  
+  <path fill="none" stroke="#ff7a20;" stroke-linecap="round" stroke-linejoin="round" d="M8 2.5q-3 0-3.75 3.33C5 4.73 5.88 4.31 6.87 4.58c.58.16.98.62 1.43 1.13c.74.83 1.6 1.79 3.45 1.79q3 0 3.75-3.33c-.75 1.1-1.63 1.52-2.63 1.25c-.57-.16-.97-.62-1.42-1.13C10.7 3.46 9.85 2.5 8 2.5m-3.75 6q-3 0-3.75 3.33c.75-1.1 1.63-1.52 2.63-1.25c.57.16.97.62 1.42 1.13c.74.83 1.6 1.79 3.45 1.79q3 0 3.75-3.33c-.75 1.1-1.63 1.52-2.62 1.25c-.58-.16-.98-.62-1.43-1.13c-.74-.83-1.6-1.79-3.45-1.79" />
+</svg>
+              </div>
+              <h4>Tailwind CSS</h4>
+              <span class="tech-badge">Styling Framework</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <div class="category-title">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                </svg>
+              </div>
+              <h3>Backend</h3>
+            </div>
+            <span class="category-tag">APIs &amp; Database</span>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-card">
+              <div class="tech-icon-wrapper hono-color">
+                <svg viewBox="0 0 100 100" class="tech-svg">
+                  <path d="M50 10C30 30 20 50 20 68C20 84.5 33.5 98 50 98C66.5 98 80 84.5 80 68C80 50 70 30 50 10Z" fill="#E36002"/>
+                  <path d="M50 35C40 48 33 60 33 72C33 81 40.5 88 50 88C59.5 88 67 81 67 72C67 60 60 48 50 35Z" fill="#FF7A20"/>
+                </svg>
+              </div>
+              <h4>Hono.js</h4>
+              <span class="tech-badge">Runtime</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper node-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-nodejs"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0" /><path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5" /></svg>
+              </div>
+              <h4>Node.js</h4>
+              <span class="tech-badge">Runtime</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper prisma-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-prisma">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4.186 16.202l3.615 5.313c.265 .39 .754 .57 1.215 .447l10.166 -2.718a1.086 1.086 0 0 0 .713 -1.511l-7.505 -15.483a.448 .448 0 0 0 -.787 -.033l-7.453 12.838a1.07 1.07 0 0 0 .037 1.147l-.001 0" />
+                  <path d="M8.5 22l3.5 -20" />
+                </svg>
+              </div>
+              <h4>Prisma</h4>
+              <span class="tech-badge">ORM</span>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-icon-wrapper mysql-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mysql">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M13 21c-1.427 -1.026 -3.59 -3.854 -4 -6c-.486 .77 -1.501 2 -2 2c-1.499 -.888 -.574 -3.973 0 -6c-1.596 -1.433 -2.468 -2.458 -2.5 -4c-3.35 -3.44 -.444 -5.27 2.5 -3h1c8.482 .5 6.421 8.07 9 11.5c2.295 .522 3.665 2.254 5 3.5c-2.086 -.2 -2.784 -.344 -3.5 0c.478 1.64 2.123 2.2 3.5 3" />
+                  <path d="M9 7h.01" />
+                </svg>
+              </div>
+              <h4>MySQL</h4>
+              <span class="tech-badge">Database</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <div class="category-header">
+            <div class="category-title">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Tools &amp; Workflow</h3>
+            </div>
+            <span class="category-tag">Development &amp; Deployment</span>
+          </div>
+
+            <div class="tech-grid tools-grid">
+              <div class="tech-card">
+                <div class="tech-icon-wrapper git-color">
+                  <svg viewBox="0 0 100 100" class="tech-svg">
+                    <rect width="100" height="100" rx="15" fill="#ff7a20"/>
+                    <circle cx="35" cy="65" r="9" fill="#FFF"/>
+                    <circle cx="65" cy="35" r="9" fill="#FFF"/>
+                    <circle cx="65" cy="65" r="9" fill="#FFF"/>
+                    <path d="M35 65L65 35M65 35V65" stroke="#FFF" stroke-width="7"/>
+                  </svg>
+                </div>
+                <h4>Git</h4>
+                <span class="tech-tag">Workflow</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper figma-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-figma"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6 6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3" /><path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" /></svg>
+                </div>
+                <h4>Figma</h4>
+                <span class="tech-tag">Design</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper vercel-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-vercel"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 19h18l-9 -15l-9 15" /></svg>
+                </div>
+                <h4>Vercel</h4>
+                <span class="tech-tag">Cloud</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper render-color">
+                  <svg viewBox="0 0 100 100" class="tech-svg">
+                    <rect width="100" height="100" rx="15" fill="#ff7a20"/>
+                    <path d="M25 75C25 50 50 30 75 25C75 50 50 70 25 75Z" fill="#0A0F1D"/>
+                  </svg>
+                </div>
+                <h4>Render</h4>
+  
+                <span class="tech-tag">Cloud</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper openai-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-openai"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11.217 19.384a3.501 3.501 0 0 0 6.783 -1.217v-5.167l-6 -3.35" /><path d="M5.214 15.014a3.501 3.501 0 0 0 4.446 5.266l4.34 -2.534v-6.946" /><path d="M6 7.63c-1.391 -.236 -2.787 .395 -3.534 1.689a3.474 3.474 0 0 0 1.271 4.745l4.263 2.514l6 -3.348" /><path d="M12.783 4.616a3.501 3.501 0 0 0 -6.783 1.217v5.067l6 3.45" /><path d="M18.786 8.986a3.501 3.501 0 0 0 -4.446 -5.266l-4.34 2.534v6.946" /><path d="M18 16.302c1.391 .236 2.787 -.395 3.534 -1.689a3.474 3.474 0 0 0 -1.271 -4.745l-4.308 -2.514l-5.955 3.42" /></svg>
+                </div>
+                <h4>OpenAI</h4>
+    
+                <span class="tech-tag">AI Tool</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper claude-color">
+                  <svg viewBox="0 0 100 100" class="tech-svg">
+                    <polygon points="50,10 63,37 90,50 63,63 50,90 37,63 10,50 37,37" fill="#D97706"/>
+                  </svg>
+                </div>
+                <h4>Claude</h4>
+        
+                <span class="tech-tag">AI Tool</span>
+              </div>
+
+               <div class="tech-card">
+                <div class="tech-icon-wrapper claude-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-visual-studio"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8l2 -1l10 13l4 -2v-12l-4 -2l-10 13l-2 -1l0 -8" /></svg>
+                </div>
+                <h4>VS Code</h4>
+    
+                <span class="tech-tag">IDE</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper claude-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github-copilot"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 18v-5.5c0 -.667 .167 -1.333 .5 -2" /><path d="M12 7.5c0 -1 -.01 -4.07 -4 -3.5c-3.5 .5 -4 2.5 -4 3.5c0 1.5 0 4 3 4c4 0 5 -2.5 5 -4" /><path d="M4 12c-1.333 .667 -2 1.333 -2 2c0 1 0 3 1.5 4c3 2 6.5 3 8.5 3s5.499 -1 8.5 -3c1.5 -1 1.5 -3 1.5 -4c0 -.667 -.667 -1.333 -2 -2" /><path d="M20 18v-5.5c0 -.667 -.167 -1.333 -.5 -2" /><path d="M12 7.5l0 -.297l.01 -.269l.027 -.298l.013 -.105l.033 -.215c.014 -.073 .029 -.146 .046 -.22l.06 -.223c.336 -1.118 1.262 -2.237 3.808 -1.873c2.838 .405 3.703 1.797 3.93 2.842l.036 .204c0 .033 .01 .066 .013 .098l.016 .185l0 .171l0 .49l-.015 .394l-.02 .271c-.122 1.366 -.655 2.845 -2.962 2.845c-3.256 0 -4.524 -1.656 -4.883 -3.081l-.053 -.242a3.865 3.865 0 0 1 -.036 -.235l-.021 -.227a3.518 3.518 0 0 1 -.007 -.215l.005 0" /><path d="M10 15v2" /><path d="M14 15v2" /></svg>
+                </div>
+                <h4>GitHub</h4>
+                <span class="tech-tag">Version Control</span>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-icon-wrapper claude-color">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="#ff7a20" viewBox="0 0 24 24" >
+<path d="m16.24,13.9c.93-.51,1.65-1.22,2.19-2.11.53-.91.8-1.93.8-3.06s-.27-2.07-.8-2.93c-.53-.87-1.27-1.56-2.21-2.06-.93-.5-1.96-.75-3.11-.75H5v18h4.17v-6.33h2.25l3.56,6.33h4.99l-4.03-6.94c.1-.05.2-.1.3-.16Zm-1.59-3.7c-.17.36-.43.64-.77.85-.33.19-.71.28-1.16.28h-3.55v-4.68h3.16c.55,0,1.01.09,1.39.28.39.19.69.46.9.82.21.34.31.75.31,1.21s-.09.87-.28,1.23Z"/>
+</svg>
+                </div>
+                <h4>Resend</h4>
+                <span class="tech-tag">Email Service</span>
+              </div>
+            </div>
+          </div>
+      </div>
+     
+      </section>
+
+      <!-- Services Section -->
+      <section class="section-container services" id="services">
+        <div class="section-header">
+          <span class="section-subtitle">WHAT I CAN DO FOR YOU</span>
+          <h2 class="section-title">My <span id="highlight">Services</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Building responsive user interfaces with <strong>React</strong>, <strong>JavaScript</strong>, <strong>HTML5</strong>, and <strong>CSS3</strong>.</p>
+            <ul class="service-features">
+              <li>Component Design</li>
+              <li>Responsive Layouts</li>
+              <li>Figma to Code Integration</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Backend API Engineering</h3>
+            <p>Creating backend APIs powered by <strong>HonoJS</strong>, and <strong>Node.js</strong>.</p>
+            <ul class="service-features">
+              <li>RESTful API Endpoints</li>
+              <li>Edge Server Performance</li>
+              <li>Secure Data Flows</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3>Database Management</h3>
+            <p>Designing structured relational schemas using <strong>MySQL</strong> and type-safe <strong>Prisma ORM</strong>.</p>
+            <ul class="service-features">
+              <li>Schema Design</li>
+              <li>ORM Query Optimization</li>
+              <li>Data Migration</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                <path d="M12 12L2.5 7.5"></path>
+                <path d="M12 12v10"></path>
+              </svg>
+            </div>
+            <h3>AI Workflows & Deployment</h3>
+            <p>Integrating <strong>OpenAI</strong> & <strong>Claude</strong> APIs and deploying projects onto <strong>Vercel</strong> & <strong>Render</strong>.</p>
+            <ul class="service-features">
+              <li>LLM API Integration</li>
+              <li>Git Version Control</li>
+         
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio / Projects Section -->
+      <section class="section-container portfolio" id="portfolio">
+        <div class="section-header">
+          <span class="section-subtitle">MY FEATURED WORK</span>
+          <h2 class="section-title">Featured <span id="highlight">Projects</span></h2>
+          <div class="section-line"></div>
+          <p class="section-description">Explore some of the fullstack web applications and APIs I've built.</p>
+        </div>
+
+        <input type="radio" name="filter" id="filter-all" class="filter-radio" checked hidden />
+        <input type="radio" name="filter" id="filter-fullstack" class="filter-radio" hidden />
+        <input type="radio" name="filter" id="filter-frontend" class="filter-radio" hidden />
+        <input type="radio" name="filter" id="filter-backend" class="filter-radio" hidden />
+
+        <div class="portfolio-filter">
+          <label for="filter-all" class="filter-btn btn-all">All</label>
+          <label for="filter-fullstack" class="filter-btn btn-fullstack">Fullstack</label>
+          <label for="filter-frontend" class="filter-btn btn-frontend">Frontend</label>
+        
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-category="frontend">
+            <div class="project-img-wrapper">
+              <div class="project-badge-tag">Frontend</div>
+              
+                <img src="General-images/lashProject.png" alt="">
+              
+            </div>
+            <div class="project-info">
+              <h3>Booking System</h3>
+              <p>A user-friendly web application for managing appointments and reservations.</p>
+              <div class="project-tech">
+                <span>Javascript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://lash-nbeauty-beta.vercel.app/" class="proj-btn link-demo">Live Preview</a>
+                <a href="https://github.com/Judasama69/lashNbeauty" target="_blank" class="proj-btn link-code"><img src="sidebar-images/github.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <div class="project-badge-tag">Fullstack</div>
+              <div class="project-icon-badge">
+                <img src="General-images/NotaProject.png" alt="">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>SIMPLE NOTES CRUD PROJECT</h3>
+              <p>A simple yet effective note-taking application with create, read, update, and delete functionalities.</p>
+              <div class="project-tech">
+                
+                <span>Node.js</span>
+                <span>React</span>
+                <span>HonoJs</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://keep-notes-frontend-woad.vercel.app/" class="proj-btn link-demo">Live Preview</a>
+                <a href="https://github.com/JamesFtW10/KeepNotes-Frontend" target="_blank" class="proj-btn link-code"><img src="sidebar-images/github.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <div class="project-badge-tag">Fullstack</div>
+              <div class="project-icon-badge">
+                <img src="General-images/itloganProject.png" alt="">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Fresh Egg Booking System</h3>
+              <p>A modern web application for managing egg bookings and inventory.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>HTML5 / CSS3</span>
+                <span>TailwindCSS</span>
+                <span>HonoJs</span>
+                <span>Prisma</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="proj-btn link-demo" style="cursor: not-allowed">Development </a>
+                <a href="https://github.com/" target="_blank" class="proj-btn link-code" style="cursor: not-allowed;">Private</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section class="section-container contact" id="contact">
+        <div class="section-header">
+          <span class="section-subtitle">LET'S CONNECT</span>
+          <h2 class="section-title">Contact <span id="highlight">Me</span></h2>
+          <div class="section-line"></div>
+          <p class="section-description">Have a project in mind or want to collaborate? Send me a message!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>I'm open to discussing fullstack web development opportunities, API design, or AI workflows.</p>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>jamesbarrera660@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Negros Occidental Tanjay City, PH</p>
+              </div>
+            </div>
+
+            <div class="contact-socials-inline">
+              <a href="https://github.com/JamesFtW10" target="_blank" title="GitHub">
+                <img src="sidebar-images/github.png" alt="GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/in/james-barrera-1628532b0/" target="_blank" title="LinkedIn">
+                <img src="sidebar-images/linkendIn.png" alt="LinkedIn" />
+              </a>
+              <a href="https://www.facebook.com/james.barrera.609396" target="_blank" title="Facebook">
+                <img src="sidebar-images/facebook.png" alt="Facebook" />
+              </a>
+              <a href="https://t.me/jamesbarrera0907" target="_blank" title="Telegram">
+                <img src="sidebar-images/telegram.png" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" required placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">Send Message</button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2026 <span>James V. Barrera</span>. Aspiring Fullstack Developer.</p>
+          <p class="footer-subtext">React • HonoJS  • Node.js • Prisma • MySQL • OpenAI • Claude</p>
+        </div>
+      </footer>
     </div>
+
   </body>
 </html>
